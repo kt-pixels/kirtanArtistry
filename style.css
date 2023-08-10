@@ -90,7 +90,7 @@ table, td {
     padding: 20px;
 }
 
-.webs {
+#webs {
     border: 2px groove;
 /*     padding: 20px; */
 }
@@ -205,6 +205,7 @@ table, td {
 
 #Project {
     text-align: center;
+        padding: 10px;
 }
 
 #showcase h2 {
@@ -219,7 +220,7 @@ table, td {
 }
 
 p {
-    text-align: justify;
+/*     text-align: justify; */
     font-size: 17px;
     color: rgb(31, 31, 31);
     font-family: monospace;
