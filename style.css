@@ -90,7 +90,10 @@ table, td {
     padding: 20px;
 }
 
-
+.webs {
+    border: 2px groove;
+/*     padding: 20px; */
+}
 
 .first {
     display: flex;
@@ -411,6 +414,7 @@ header img {
         font-size: 24px;
         background-color: gainsboro;
         border: none;
+        margin-bottom: 20px;
     }
     .projects {
         display: block;
