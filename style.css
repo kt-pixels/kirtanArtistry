@@ -258,8 +258,92 @@ footer {
     text-align: center;
     margin: 0;
 }
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form Section */
+  #form {
+    margin: 20px;
+    padding: 20px;
+    border: 2px groove;
+  }
+  
+  /* Form Inputs */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  input[type="text"]{
+    margin-left: 10px;
+  }
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    outline: none;
+  }
+  
+  input[type="text"]:hover,
+  input[type="email"]:hover {
+    border-color: #007bff;
+  }
+  
+  /* Placeholder Shift */
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder {
+    transform: translateY(0px);
+  }
+  
+  input[type="text"]:focus::placeholder,
+  input[type="email"]:focus::placeholder {
+    transform: translateY(-25px);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Submit Button */
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
 
-@media only screen and (max-width: 352px){
+
+header img {
+    width: 70px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 400px){
     header {
         display: block;
     }
@@ -279,6 +363,7 @@ footer {
     }
     nav {
         justify-content: center;
+        padding: 5px 0px 12px 35px;
     }
     nav ul i:nth-child(7){
         display: none;
@@ -341,6 +426,7 @@ footer {
     }
     #contact h3 {
         border-bottom: none;
+        padding: 10px;
     }
     footer {
         border-top: groove;
@@ -351,5 +437,14 @@ footer {
         padding: 10px;
         background-color: rgb(62, 62, 62);
         color: white;
+    }
+    header img {
+        margin: 10px 0px 0px 128px;
+    }
+    #form {
+        margin: 0px;
+    }
+    h2 {
+        padding: 10px 0px 20px 0px;
     }
 }
