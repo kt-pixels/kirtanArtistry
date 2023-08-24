@@ -35,6 +35,7 @@ main {
 ul {
     display: flex;
     list-style: none;
+    margin-left: 36px;
 }
 
 li {
@@ -68,6 +69,7 @@ section {
 
 h2 {
     font-size: 32px;
+    padding: 20px 0;
 }
 
 table {
@@ -88,7 +90,10 @@ table, td {
     padding: 20px;
 }
 
-
+#webs {
+    border: 2px groove;
+/*     padding: 20px; */
+}
 
 .first {
     display: flex;
@@ -175,7 +180,7 @@ table, td {
     height: fit-content;
 }
 .ktpixels p {
-    font-family: cursive;
+/*     font-family: cursive; */
     font-size: 18px;
     text-align: center;
     color: rgb(80, 80, 80);
@@ -199,6 +204,7 @@ table, td {
 
 #Project {
     text-align: center;
+        padding: 10px;
 }
 
 #showcase h2 {
@@ -206,14 +212,14 @@ table, td {
 }
 
 #showcase p {
-    text-align: justify;
+/*     text-align: justify; */
     font-size: 18px;
     color: rgb(60, 60, 60);
-    font-family: cursive;
+/*     font-family: cursive; */
 }
 
 p {
-    text-align: justify;
+/*     text-align: justify; */
     font-size: 17px;
     color: rgb(31, 31, 31);
     font-family: monospace;
@@ -304,7 +310,7 @@ footer {
   }
   
   input[type="text"]:hover,
-  input[type="email"]:hover {
+  input[type="email"]:hover{
     border-color: #007bff;
   }
   
@@ -408,6 +414,7 @@ header img {
         font-size: 24px;
         background-color: gainsboro;
         border: none;
+        margin-bottom: 20px;
     }
     .projects {
         display: block;
