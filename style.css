@@ -25,7 +25,7 @@ header {
 
 nav {
     display: flex;
-    margin-left: 0px;
+    margin-left: 40px;
 }
 
 main {
@@ -94,7 +94,6 @@ table, td {
     display: flex;
     border: groove;
     padding: 18px;
-    margin: -10px;
 }
 
 .image {
