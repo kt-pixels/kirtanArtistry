@@ -369,6 +369,7 @@ header img {
     nav {
         justify-content: center;
         padding: 5px 0px 12px 35px;
+        margin: 0;
     }
     nav ul i:nth-child(7){
         display: none;
