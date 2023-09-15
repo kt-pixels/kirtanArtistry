@@ -1,457 +1,656 @@
+/* FOR FULL BODY TAGS */
+
 html {
     scroll-behavior: smooth;
 }
 
+.bars {
+    display: none;
+}
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #fcfcfc;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/*  FOR HEADER OR NAV BAR */
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
     align-items: center;
-    display: flex;
+    background-color: rgba(0, 0, 0, 0.532);
+    color: white;
+    z-index: 1;
+    position: relative;
 }
 
+/* Heading H1 In Header */
+
+header h1 {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url(orsrc17338.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+}
+
+/* LINKS A  */
 nav {
-    display: flex;
-    margin-left: 40px;
+    display: block;
 }
 
-main {
-    margin: 20px;
-}
-
-ul {
-    display: flex;
-    list-style: none;
-    margin-left: 36px;
-}
-
-li {
-    list-style: none;
-}
-ul li {
-    margin-right: 20px;
-    margin-left: 10px;
-    list-style: none;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-a {
+nav a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
-section {
-    padding: 40px 0;
-}
-
-h2 {
-    font-size: 32px;
-    padding: 20px 0;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th {
-    text-align: center;
-    column-span: all;
-    /* border: 1px solid #ccc; */
-}
-
-table, td {
-    border: 1px solid #ccc;
-    width: 50rem;
-    text-align: center;
-    padding: 20px;
-}
-
-#webs {
-    border: 2px groove;
-/*     padding: 20px; */
-}
-
-.first {
-    display: flex;
-    border: groove;
-    padding: 18px;
-}
-
-.image {
-    width: 100%;
-}
-.image img {
-    width: 90%;
-}
-
-.style {
-    list-style: lower-roman;
-}
-
-#spiritual {
-    display: flex;
-}
-.right {
-    width: 50%;
-    border: groove;
+.fab {
     margin-left: 10px;
-}
-.right h2 {
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    background-color: gainsboro;
-}
-.right p {
-    padding: 10px;
-}
-.left {
-    width: 50%;
-    border: groove;
-    margin-right: 10px;
-}
-.left h2 {
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    background-color: gainsboro;
-}
-.left p {
-    padding: 10px;
+    font-size: 18px;
 }
 
-#develop {
-    padding: 0;
+.fas {
+    margin-left: 10px;
+    font-size: 18px;
 }
 
-#develop h2 {
-    margin: 0;
-    padding: 20px;
-    background-color: gainsboro;
-    text-align: center;
-    border: groove;
+/* BACKGROUND IMAGE SETTING */
+
+.bg-background {
+    height: 600px;
+    background-image: url(KIRTAN\ KAUSHIK.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -82px;
 }
 
-.projects {
-    display: flex;
-}
+/* IMAGE TAG KI SETTINGS  */
 
-.ktpixels {
-    margin: 10px;
-    padding: 10px;
-    border: 2px groove;
-    padding: 0;
+.image img {
     width: 400px;
 }
 
-.ktpixels h4 {
-    margin: 0;
-    padding: 10px;
-    background-color: gainsboro;
+/* ALL H2 HEADINGS KI SETTING */
+
+.center {
     text-align: center;
-    font-size: 20px;
-}
-.ktpixels img {
-    width: 100%;
-    height: fit-content;
-}
-.ktpixels p {
-/*     font-family: cursive; */
-    font-size: 18px;
-    text-align: center;
-    color: rgb(80, 80, 80);
+    font-size: 35px;
+    color: rgb(74, 74, 74);
+    text-decoration: underline;
+    margin-top: 90px;
 }
 
-.ktpixels button {
+/* CENTER CLASS KE ICONS */
+.center i {
+    font-size: 30px;
+}
+
+/* MAIN KE FIRST SECTION TAG KI SETTINGS  */
+
+.first {
+    margin: 20px;
+    padding: 10px;
+}
+
+.first .left-side {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first .left-side div:nth-child(1) {
+    box-shadow: 2px 2px 5px gray;
+    flex: 1;
+    background-color: white;
+    margin: 20px;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+
+/* IN FIRST DIVS ICONS */
+
+.icons {
+    box-shadow: none !important;
+    border-bottom: 2px solid gray;
+    border-radius: 0 !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ICON HEART SELECTION AND HOVER */
+
+.icons i:nth-child(1) {
+    color: red;
+    font-size: 26px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+
+.icons i:nth-child(1):hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+/* ICON LIKE SELECTION AND HOVER */
+
+.icons i:nth-child(2) {
+    color: rgb(61, 61, 61);
+    font-size: 26px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+.icons i:nth-child(2):hover {
+    scale: 1.1;
+    cursor: pointer;
+    transform: rotate(-15deg);
+}
+
+/* ICON MESSAGE SELECTION AND HOVER */
+
+.icons i:nth-child(3) {
+    color: blue;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.icons i:nth-child(3):hover {
+   cursor: pointer;
+}
+
+
+/* SELECTING H2 IN FIRST DIV */
+
+.first .left-side div:nth-child(1) h2 {
+    text-align: center;
+    /* background-color: rgb(0, 166, 255); */
+    background-image: linear-gradient(to bottom right , #ffffff, #dddddd);
+    box-shadow: 0 2px 3px gray;
+    color: black;
+    margin: 0px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* SELECTING PARAGRAPH IN FIRST DIV */
+
+.first .left-side div:nth-child(1) p {
+    margin: 20px;
+    font-family: revert;
+    color: rgb(61, 61, 61);
+    text-align: justify;
+}
+
+/* SELECTING SECOND DIV */
+
+.first .left-side div:nth-child(2) {
+    box-shadow: 2px 2px 5px gray;
+    flex: 1;
+    background-color: white;
+    margin: 20px;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+
+/* SELECTING H2 IN SECOND DIV */
+
+.first .left-side div:nth-child(2) h2 {
+    text-align: center;
+    /* background-color: rgb(0, 166, 255); */
+    background-image: linear-gradient(to bottom right , #ffffff, #dddddd);
+    box-shadow: 0 2px 3px gray;
+    color: black;
+    margin: 0px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* SELECTING PARAGRAPH IN SECOND DIV */
+
+.first .left-side div:nth-child(2) ol {
+    margin: 20px;
+    font-family: revert;
+    color: rgb(61, 61, 61);
+    text-align: justify;
+    padding: 0 20px;
+}
+
+
+/* THIS IS SECTION ProDim */
+
+.ProDim p{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border-bottom: 2px solid gray; */
+    margin: 0 20px;
+}
+
+/* THIS IS ANOTHER SECTION FOR spiritual */
+.spiritual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, rgb(236, 236, 236) , rgb(225, 225, 225));
+}
+
+.spiritual .left{
+   flex: 1;
+}
+
+.spiritual .left img{
+    width: 250px;
+}
+
+.spiritual .left img:nth-child(1){
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.spiritual .left img:nth-child(2){
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.spiritual .left img:nth-child(4){
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.spiritual .left img:nth-child(5){
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+.spiritual .right {
+    flex: 1;
+    color: #464646;
+}
+
+.spiritual .right h2{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.spiritual .right p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.back-Image {
+    background-image: url(Spiritual_Endeavors-removebg-preview.png);
+    width: 600px;
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-Image img{
+    box-shadow: 0px 0px 5px;
+    width: 200px;
+}
+
+/* PROJECTS KA DESIGN IDHAR HAI  */
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px;
+}
+
+.projects .ktpixels{
+    width: 350px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.projects .ktpixels h4{
+    margin: 0;
+    font-size: 20px;
+    color: #464646;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.projects .ktpixels img{
+    width: 350px;
+}
+
+.projects .ktpixels p{
+    margin: 0;
+    font-size: 18px;
+    color: #464646;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.projects .ktpixels .button {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    margin: 0;
     border: none;
     text-align: center;
-    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.projects .ktpixels .button a {
+    color: #ffffff;
+    text-decoration: none;
     font-size: 20px;
-    border-radius: 10px;
-    color: white;
-    margin: 10px 149px;
-    background-color: #0000ff75;
-}
-.ktpixels button:hover {
-    cursor: pointer;
-    background-color: #8c00ff9a;
-    box-shadow: 1px 1px 5px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
 }
 
-#Project {
-    text-align: center;
-        padding: 10px;
-}
 
-#showcase h2 {
-    text-align: center;
-}
+/* THIS IS FOR showcase SECTION DESIGN */
 
 #showcase p {
-/*     text-align: justify; */
-    font-size: 18px;
-    color: rgb(60, 60, 60);
-/*     font-family: cursive; */
-}
-
-p {
-/*     text-align: justify; */
-    font-size: 17px;
-    color: rgb(31, 31, 31);
-    font-family: monospace;
-}
-footer {
-    background-color: #f4f4f4;
-    padding: 10px 0;
-} 
-#contact {
-    display: flex;
-    grid-column: 4;
-}
-#contact h3{
     text-align: center;
-    border-bottom: groove;
-}
-#contact p{
-    text-align: center;
-    margin: 0;
+    font-size: 20px;
     padding: 20px;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border-bottom: 2px solid gray; */
+    margin: 0 20px;
 }
 
-#contact p:hover{
-    background-color: #333;
-    color: white;
+/* FOOTER KA DESIGN IDHAR HAI  */
+
+footer {
+    background-color: #dddddd;
+    padding: 12px 20px;
+}
+
+form {
+    flex: 1;
+}
+
+form h3 {
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color:#464646;
+}
+
+form p label{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color:#464646;
+}
+
+form p input{
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color:#464646;
+}
+
+form p input:focus{
+    outline: none;
+}
+
+form p button{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color:white;
+    background-color: rgb(0, 110, 255);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
 }
-.information {
-    width: 100%;
-    border-left: groove;
-    border-bottom: groove;
+
+#form{
+    display: flex;
 }
-.information p a {
-    color: blue;
-    text-decoration: underline;
+
+.information {
+    flex : 1;
+}
+
+.information h3{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color:#464646;
+}
+
+.information p{
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color:#464646;
 }
 
 
 .copyright {
-    font-size: 25px;
     text-align: center;
+    color: #333;
+    font-size: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
     margin: 0;
 }
-/* Global Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Form Section */
-  #form {
-    margin: 20px;
-    padding: 20px;
-    border: 2px groove;
-  }
-  
-  /* Form Inputs */
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  p {
-    margin: 10px 0;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  input[type="text"]{
-    margin-left: 10px;
-  }
-  input[type="text"],
-  input[type="email"] {
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    transition: border-color 0.3s;
-  }
-  input[type="text"]:focus,
-  input[type="email"]:focus {
-    outline: none;
-  }
-  
-  input[type="text"]:hover,
-  input[type="email"]:hover{
-    border-color: #007bff;
-  }
-  
-  /* Placeholder Shift */
-  input[type="text"]::placeholder,
-  input[type="email"]::placeholder {
-    transform: translateY(0px);
-  }
-  
-  input[type="text"]:focus::placeholder,
-  input[type="email"]:focus::placeholder {
-    transform: translateY(-25px);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  /* Submit Button */
-  button[type="submit"] {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
 
+/* 1200 SCREEN RESPONSIVE */
 
-header img {
-    width: 70px;
-    border-radius: 10px;
-    margin: 10px;
+@media only screen and (max-width: 1200px){
+    .spiritual .left img:nth-child(1) {
+        margin-left: 16px;
+    }
+    .spiritual .left img:nth-child(4) {
+        margin-left: 16px;
+    }
+
+    .spiritual .left img {
+        width: 200px;
+    }
+
 }
 
-@media only screen and (max-width: 400px){
-    header {
-        display: block;
-    }
-    header h1 {
-        margin: 0;
-        text-align: center;
-        padding: 10px;
-    }
+/* 1080 SCREEN RESPONSIVE */
 
-    ul {
-        font-size: 12px;
-        margin-left: -35px;
+@media only screen and (max-width: 1080px){
+    .projects .ktpixels {
+        width: 300px;
     }
-    ul li {
-        margin-right: 10px;
-        margin-left: 5px;
+    .projects .ktpixels img {
+        width: 300px;
+    }
+    .bg-background {
+        height: 400px;
+        background-position: top;
+    }
+    .spiritual .left{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0px;
     }
     nav {
-        justify-content: center;
-        padding: 5px 0px 12px 35px;
-        margin: 0;
-    }
-    nav ul i:nth-child(7){
-        display: none;
-    }
-    nav ul li:nth-child(8){
-        display: none;
-    }
-    .first {
         display: block;
-    }
-    .image img {
-        width: 100%;
     }
 
-    .left-side h2 {
-        font-size: 24px;
-        text-align: center;
+    .projects .ktpixels {
+        width: 450px;
+        margin-top: 20px;
     }
-
-    #spiritual {
-        display: block;
-    }
-    .left {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-    .left h2 {
-        padding: 10px;
-        font-size: 22px;
-    }
-    .right {
-        margin-left: 0;
-        width: 100%;
-    }
-    .right h2 {
-        padding: 10px;
-        font-size: 22px;
-    }
-    #develop h2 {
-        margin: 0;
-        text-align: center;
-        font-size: 24px;
-        background-color: gainsboro;
-        border: none;
-        margin-bottom: 20px;
-    }
-    .projects {
-        display: block;
-    }
-    .ktpixels {
-        width: 100%;
-        margin: 0 0 40px 0px;
-    }
-    .ktpixels button {
-        margin: 10px 114px;
-    }
-    #contact {
-        display: block;
-        padding: 0;
-    }
-    #contact h3 {
-        border-bottom: none;
-        padding: 10px;
-    }
-    footer {
-        border-top: groove;
-        padding: 0;
-    }
-    .copyright {
-        font-size: 20px;
-        padding: 10px;
-        background-color: rgb(62, 62, 62);
-        color: white;
-    }
-    header img {
-        margin: 10px 0px 0px 128px;
-    }
-    #form {
-        margin: 0px;
-    }
-    h2 {
-        padding: 10px 0px 20px 0px;
+    .projects .ktpixels img {
+        width: 450px;
     }
 }
+
+/* MOBILE RESPONSIVE DESING STARTING FROM HERE */
+
+@media only screen and (max-width: 600px){
+    .bars {
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+    #bar1, #bar2, #bar3{
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    header {
+        display: block;
+        background-color: rgb(0, 0, 0);
+    }
+
+    header h1 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 10px 0 15px 0px;
+        margin: 0 0px 0px 98px;
+    }
+
+    .fas {
+        font-size: 16px;
+        /* display: none; */
+    }
+
+    .fab {
+        font-size: 16px;
+        /* display: none; */
+    }
+
+    nav{
+        display: none;
+        position: absolute;
+        background-color: #333;
+        padding: 20px;
+        margin: -10px;
+        transition: transform 0.5s ease;
+    }
+
+    nav a {
+        font-size: 16px;
+        display: block;
+        padding: 10px;
+    }
+
+    .first {
+        padding: 10px;
+        margin: 0;
+    }
+    
+    
+    .bg-background {
+        height: 200px;
+        margin-top: 0;
+    }
+    
+    .center {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .center i {
+        font-size: 20px;
+    }
+
+    .first .left-side {
+        display: block;
+    }
+
+    .first .left-side div:nth-child(2) h2 {
+        font-size: 20px;
+    }
+
+    .spiritual .left {
+        display: none;
+    }
+
+    .spiritual  {
+        margin: 10px;
+    }
+
+    .projects {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .ProDim p {
+        font-size: 18px;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    #form {
+        display: block;
+    }
+
+    .spiritual .right h2 {
+        font-size: 22px;
+    }
+
+    .projects .ktpixels {
+        width: 312px;
+        margin: 20px;
+    }
+
+    .projects .ktpixels img {
+        width: 312px;
+    }
+
+    #showcase p {
+        font-size: 12px;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+
+    .information h3 {
+        font-size: 22px;
+        color: #333;
+    }
+
+    form h3 {
+        font-size: 18px;
+    }
+
+    form p label {
+        font-size: 18px;
+    }
+}
+
