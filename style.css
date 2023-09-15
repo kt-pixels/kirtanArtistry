@@ -188,6 +188,16 @@ nav a {
     text-align: justify;
 }
 
+#lastPera {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border-bottom: 2px solid gray; */
+    margin: 0 20px;
+}
+
 /* SELECTING SECOND DIV */
 
 .first .left-side div:nth-child(2) {
@@ -611,6 +621,12 @@ form p button{
         font-size: 18px;
         padding: 10px;
         margin: 0 10px;
+    }
+
+    #lastPera {
+        font-size: 18px;
+    padding: 10px;
+    margin: 0 10px;
     }
 
     #form {
