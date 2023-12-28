@@ -1,75 +1,80 @@
-const hamburger = document.querySelector('.bars');
-const navigation = document.querySelector('nav');
-const bar1 = document.querySelector('#bar1');
-const bar2 = document.querySelector('#bar2');
-const bar3 = document.querySelector('#bar3');
+const hamburger = document.querySelector('[data-ham-burger]');
+const navigation = document.querySelector('[data-nav-bar]');
+const body = document.querySelector('[data-body]')
 
 
 
 hamburger.addEventListener('click', function(){
-    if (navigation.style.display === "none" || navigation.style.display === "") {
-        navigation.style.display = 'block';
-        bar1.style.transform = 'rotate(45deg)';
-        bar1.style.marginTop = '22px'
-        bar2.style.display = 'none';
-        bar3.style.transform = 'rotate(-45deg)';
-        bar3.style.marginTop = '-2px'
+    if (navigation.style.transform === "translateX(-310px)" || navigation.style.transform === "") {
+        navigation.style.transform = 'translateX(0px)';
+        navigation.style.boxShadow ='5px 0px 20px #171717';
     }else{
-        navigation.style.display = 'none'
-        bar1.style.transform = 'rotate(0deg)';
-        bar1.style.marginTop = '10px'
-        bar2.style.display = 'block';
-        bar3.style.transform = 'rotate(0deg)';
-        bar3.style.marginTop = '10px'
+        navigation.style.transform = 'translateX(-310px)';
+        navigation.style.boxShadow ='none';
     }
 })
 
-// document.addEventListener('click', function(clickOutSide){
-//     const contain = clickOutSide.target;
-//     if(!hamburger.contains(contain)){
-//         navigation.style.display = 'none'
-//         bar1.style.transform = 'rotate(0deg)';
-//         bar1.style.marginTop = '10px'
-//         bar2.style.display = 'block';
-//         bar3.style.transform = 'rotate(0deg)';
-//         bar3.style.marginTop = '10px'
-//     }
-// })
+
+// TOP BUTTON
+
+const topButton = document.querySelector('[data-top-button]');
+
+window.onscroll = ()=> {
+    if(document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
+        topButton.style.opacity = '1';
+    }else{
+        topButton.style.opacity = '0';
+    }
+}
+
+topButton.addEventListener('click', ()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
 
 
-// ICONS STYLE CHANGING 
-const firstIcon = document.querySelector('.icons i:nth-child(1)');
-const secondIcon = document.querySelector('.icons i:nth-child(2)');
+const contactForm = document.querySelector('[data-contact-form]');
+const contact = document.querySelector('[data-contact]');
+const Icon = document.querySelector('[data-icon]');
 
-firstIcon.addEventListener('click', function(){
-    if (firstIcon.classList.contains('fa-heart')) {
-        firstIcon.classList.remove('fa-heart');
-        firstIcon.classList.add('fa-heartbeat');
-        secondIcon.style.color = '';
+contact.addEventListener('click', ()=>{
+    if(contactForm.style.transform === 'scale(0)' || contactForm.style.transform === ''){
+        contactForm.style.transform = 'scale(1)';
+    }else {
+        contactForm.style.transform = 'scale(0)';
     }
 })
 
-secondIcon.addEventListener('click', function(){
-    if(secondIcon.style.color === ""){
-        secondIcon.style.color = 'blue';
-    }
+Icon.addEventListener('click', ()=>{
+    contactForm.style.transform = 'scale(0)';
 })
-
 
 // FORM VALIDATION 
 
 function validateForm() {
-    var name = document.forms["contact"]["name"].value;
-    var email = document.forms["contact"]["email"].value;
-    var message = document.forms["contact"]["Message"].value;
+    var name = document.forms["contactForm"]["fisrtname"].value;
+    var lastname = document.forms["contactForm"]["lastname"].value;
+    var email = document.forms["contactForm"]["email"].value;
+    var number = document.forms["contactForm"]["number"].value;
+    var message = document.forms["contactForm"]["message"].value;
 
     if (name === "") {
         alert("Name must be filled out");
         return false;
     }
 
+    if (lastname === "") {
+        alert("Last Name must be filled out");
+        return false;
+    }
+
     if (email === "") {
         alert("Email must be filled out");
+        return false;
+    }
+
+    if (number === "") {
+        alert("Number must be filled out");
         return false;
     }
 
